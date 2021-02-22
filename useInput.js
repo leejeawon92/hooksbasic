@@ -1,4 +1,4 @@
-const useInput = (initialvalue, validator) => {
+export const useInput = (initialvalue, validator) => {
     const [value, setvalue] = useState(initialvalue);
     const onChange = (event) => {
         const {
@@ -10,7 +10,7 @@ const useInput = (initialvalue, validator) => {
         if(typeof validator ==='function'){
         willUpdate = validator(value)
         }
-        
+
         if(willUpdate){
             setvalue(value)
         }
