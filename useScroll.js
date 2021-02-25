@@ -1,3 +1,4 @@
+import React, { useEffect, useRef, useState } from "react";
 const useScroll = () => {
     const [state, setState] = useState({
         x: 0,
