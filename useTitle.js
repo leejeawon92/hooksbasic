@@ -1,4 +1,3 @@
-import React, { useEffect, useRef, useState } from "react";
 export const useTitle = (initialTitle) => {
     const [title, setTitle] = useState(initialTitle);
     const updateTitle = () => {

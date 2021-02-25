@@ -1,4 +1,3 @@
-import React, { useEffect, useRef, useState } from "react";
 const useFullscreen = (callback) => {
     const element = useRef();
     const runCb = (isFull) => {
